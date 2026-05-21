@@ -1,0 +1,834 @@
+/* ════════════════════════════════════════════════════════════
+   adult-college-protection.css
+   Scoped under body.adult-college-page
+   Overrides styles.css only for this page.
+════════════════════════════════════════════════════════════ */
+
+/* ── LOCAL VARS ───────────────────────────────────────────── */
+body.adult-college-page {
+  --acp-navy:       #05071a;
+  --acp-navy-mid:   #0a0d25;
+  --acp-navy-card:  #0d1230;
+  --acp-gold:       #c9a44a;
+  --acp-gold-lt:    #dfc07a;
+  --acp-cream:      #f5f0e8;
+  --acp-white:      #ffffff;
+  --acp-border:     rgba(201,164,74,0.30);
+  --acp-shadow:     0 4px 24px rgba(0,0,0,0.4);
+  background: #f0ede8;
+  color: #111;
+}
+
+/* ── HERO ─────────────────────────────────────────────────── */
+body.adult-college-page .acp-hero {
+  position: relative;
+  min-height: 380px;
+  overflow: hidden;
+  background: #06081e;
+}
+
+body.adult-college-page .acp-hero-img-wrap {
+  position: absolute;
+  inset: 0;
+  right: 0;
+  left: 40%;
+}
+
+body.adult-college-page .acp-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+body.adult-college-page .acp-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #06081e 42%, rgba(6,8,30,0.65) 65%, rgba(6,8,30,0.15) 100%);
+  pointer-events: none;
+}
+
+body.adult-college-page .acp-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 44px 28px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+body.adult-college-page .acp-hero-left {
+  flex: 0 0 auto;
+  max-width: 520px;
+}
+
+body.adult-college-page .acp-hero-h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.0;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+body.adult-college-page .acp-hero-gold {
+  color: var(--acp-gold);
+}
+
+body.adult-college-page .acp-hero-sub {
+  font-family: 'Barlow', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #cdd0e0;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+body.adult-college-page .acp-hero-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+body.adult-college-page .acp-hero-icon-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+body.adult-college-page .acp-hicon {
+  width: 38px;
+  height: 38px;
+  background: rgba(201,164,74,0.15);
+  border: 1px solid var(--acp-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--acp-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+body.adult-college-page .acp-hicon-text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+body.adult-college-page .acp-hicon-text strong {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+body.adult-college-page .acp-hicon-text span {
+  font-size: 11px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+body.adult-college-page .acp-hero-badge {
+  flex-shrink: 0;
+  background: rgba(13,18,48,0.92);
+  border: 2px solid var(--acp-border);
+  border-radius: 8px;
+  padding: 18px 20px;
+  text-align: center;
+  min-width: 160px;
+}
+
+body.adult-college-page .acp-badge-shield {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+body.adult-college-page .acp-badge-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+body.adult-college-page .acp-badge-stars {
+  color: var(--acp-gold);
+  font-size: 14px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+/* ── PLANS SECTION ────────────────────────────────────────── */
+body.adult-college-page .acp-plans-section {
+  background: #f0ede8;
+  padding: 0;
+}
+
+body.adult-college-page .acp-plans-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+/* ── PLAN COLUMN ──────────────────────────────────────────── */
+body.adult-college-page .acp-plan-col {
+  background: #fff;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+body.adult-college-page .acp-plan-col--college {
+  border-right: none;
+}
+
+/* ── PLAN TITLE BAR ───────────────────────────────────────── */
+body.adult-college-page .acp-plan-titlebar {
+  background: #0d1230;
+  padding: 16px 20px 14px;
+  text-align: center;
+  border-bottom: 2px solid var(--acp-gold);
+}
+
+body.adult-college-page .acp-plan-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  line-height: 1.1;
+}
+
+body.adult-college-page .acp-plan-subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--acp-gold);
+  margin: 4px 0 0;
+  text-transform: uppercase;
+}
+
+/* ── PLAN INTRO ───────────────────────────────────────────── */
+body.adult-college-page .acp-plan-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-bottom: 1px solid #e8e4dc;
+}
+
+body.adult-college-page .acp-plan-photo {
+  overflow: hidden;
+  max-height: 200px;
+}
+
+body.adult-college-page .acp-plan-photo-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+body.adult-college-page .acp-plan-desc {
+  padding: 18px 16px;
+  background: #faf8f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #222;
+}
+
+body.adult-college-page .acp-plan-desc p {
+  margin: 0;
+}
+
+body.adult-college-page .acp-plan-desc strong {
+  font-weight: 700;
+  color: #111;
+}
+
+/* ── DOCUMENT CHECKLIST ───────────────────────────────────── */
+body.adult-college-page .acp-docs-section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 16px 16px;
+  border-bottom: 1px solid #e8e4dc;
+  background: #fff;
+  align-items: start;
+}
+
+body.adult-college-page .acp-docs-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+body.adult-college-page .acp-docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+body.adult-college-page .acp-docs-list li {
+  font-family: 'Barlow', sans-serif;
+  font-size: 12.5px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  line-height: 1.3;
+}
+
+body.adult-college-page .acp-check {
+  color: var(--acp-gold);
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+body.adult-college-page .acp-docs-right {
+  flex-shrink: 0;
+  width: 110px;
+  align-self: flex-start;
+  padding-top: 24px;
+}
+
+body.adult-college-page .acp-passport-img {
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  display: block;
+}
+
+/* ── PRICING ROW ──────────────────────────────────────────── */
+body.adult-college-page .acp-pricing-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-bottom: 1px solid #e8e4dc;
+}
+
+body.adult-college-page .acp-pricing-card {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+body.adult-college-page .acp-pricing-standard {
+  background: #0d1230;
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+body.adult-college-page .acp-pricing-enhanced {
+  background: #0f1435;
+}
+
+body.adult-college-page .acp-pricing-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+body.adult-college-page .acp-label-sub {
+  color: var(--acp-gold);
+  font-size: 10px;
+}
+
+body.adult-college-page .acp-price {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+body.adult-college-page .acp-price-gold {
+  color: var(--acp-gold);
+}
+
+body.adult-college-page .acp-price-sub {
+  font-family: 'Barlow', sans-serif;
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+body.adult-college-page .acp-price-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+body.adult-college-page .acp-price-features li {
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+body.adult-college-page .acp-check-sm {
+  color: #aaa;
+  font-size: 12px;
+}
+
+body.adult-college-page .acp-gold-check {
+  color: var(--acp-gold);
+}
+
+body.adult-college-page .acp-btn-protect {
+  display: block;
+  width: 100%;
+  background: #fff;
+  color: #111;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: auto;
+  transition: background .2s;
+}
+
+body.adult-college-page .acp-btn-protect:hover {
+  background: #f0f0f0;
+}
+
+body.adult-college-page .acp-btn-gold {
+  background: var(--acp-gold) !important;
+  color: #000 !important;
+}
+
+body.adult-college-page .acp-btn-gold:hover {
+  background: var(--acp-gold-lt) !important;
+}
+
+/* ── ID CARD SECTION ──────────────────────────────────────── */
+body.adult-college-page .acp-id-section {
+  border-bottom: 1px solid #e8e4dc;
+  background: #faf8f5;
+}
+
+body.adult-college-page .acp-id-header {
+  background: #0d1230;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 16px;
+  text-align: center;
+  border-bottom: 1px solid var(--acp-border);
+}
+
+body.adult-college-page .acp-id-body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  padding: 14px 16px;
+  align-items: start;
+}
+
+body.adult-college-page .acp-id-card-wrap {
+  flex-shrink: 0;
+  width: 130px;
+}
+
+body.adult-college-page .acp-id-card-img {
+  width: 130px;
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  display: block;
+}
+
+body.adult-college-page .acp-id-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+body.adult-college-page .acp-id-tagline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #111;
+  margin: 0;
+}
+
+body.adult-college-page .acp-id-desc p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.45;
+  margin: 0;
+}
+
+body.adult-college-page .acp-id-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+body.adult-college-page .acp-id-features li {
+  font-family: 'Barlow', sans-serif;
+  font-size: 11.5px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+body.adult-college-page .acp-id-features li svg {
+  color: var(--acp-gold);
+  flex-shrink: 0;
+}
+
+body.adult-college-page .acp-btn-id-add {
+  display: inline-block;
+  background: var(--acp-gold);
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 9px 16px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 4px;
+  transition: background .2s;
+}
+
+body.adult-college-page .acp-btn-id-add:hover {
+  background: var(--acp-gold-lt);
+}
+
+/* ── AI CONCIERGE BANNER ──────────────────────────────────── */
+body.adult-college-page .acp-concierge-banner {
+  background: #0d1230;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--acp-border);
+  flex-wrap: wrap;
+}
+
+body.adult-college-page .acp-concierge-avatar {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+body.adult-college-page .acp-concierge-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+body.adult-college-page .acp-concierge-text strong {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+body.adult-college-page .acp-concierge-text span {
+  font-family: 'Barlow', sans-serif;
+  font-size: 11.5px;
+  color: #aaa;
+}
+
+body.adult-college-page .acp-btn-concierge {
+  display: inline-block;
+  background: var(--acp-gold);
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border-radius: 3px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s;
+}
+
+body.adult-college-page .acp-btn-concierge:hover {
+  background: var(--acp-gold-lt);
+}
+
+/* ── HOW IT WORKS ─────────────────────────────────────────── */
+body.adult-college-page .acp-how-section {
+  background: #faf8f5;
+  padding: 16px 16px 20px;
+}
+
+body.adult-college-page .acp-how-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+body.adult-college-page .acp-how-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+body.adult-college-page .acp-how-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+body.adult-college-page .acp-how-icon {
+  width: 44px;
+  height: 44px;
+  background: #0d1230;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--acp-gold);
+  flex-shrink: 0;
+}
+
+body.adult-college-page .acp-how-step-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+body.adult-college-page .acp-how-step-text strong {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+body.adult-college-page .acp-how-step-text span {
+  font-family: 'Barlow', sans-serif;
+  font-size: 11px;
+  color: #555;
+  line-height: 1.35;
+}
+
+body.adult-college-page .acp-how-arrow {
+  font-size: 18px;
+  color: var(--acp-gold);
+  padding-top: 12px;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+/* ── FINAL CTA SECTION ────────────────────────────────────── */
+body.adult-college-page .acp-final-cta {
+  background: #0d1230;
+  border-top: 2px solid var(--acp-border);
+  border-bottom: 2px solid var(--acp-border);
+  padding: 36px 28px;
+}
+
+body.adult-college-page .acp-final-cta-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+body.adult-college-page .acp-final-tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0;
+}
+
+body.adult-college-page .acp-final-gold {
+  color: var(--acp-gold);
+  font-style: italic;
+}
+
+body.adult-college-page .acp-btn-final-cta {
+  display: inline-block;
+  background: var(--acp-gold);
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s, box-shadow .2s;
+}
+
+body.adult-college-page .acp-btn-final-cta:hover {
+  background: var(--acp-gold-lt);
+  box-shadow: 0 4px 24px rgba(201,164,74,0.4);
+}
+
+/* footer styles removed — see footer.css */
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 960px) {
+  body.adult-college-page .acp-plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.adult-college-page .acp-plan-col {
+    border-right: none;
+    border-bottom: 2px solid #e8e4dc;
+  }
+
+  body.adult-college-page .acp-hero-h1 {
+    font-size: 38px;
+  }
+
+  body.adult-college-page .tfa-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  body.adult-college-page .acp-hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  body.adult-college-page .acp-hero-img-wrap {
+    left: 0;
+    opacity: 0.3;
+  }
+
+  body.adult-college-page .acp-hero-overlay {
+    background: rgba(6,8,30,0.7);
+  }
+
+  body.adult-college-page .acp-plan-intro {
+    grid-template-columns: 1fr;
+  }
+
+  body.adult-college-page .acp-pricing-row {
+    grid-template-columns: 1fr;
+  }
+
+  body.adult-college-page .acp-docs-section {
+    grid-template-columns: 1fr;
+  }
+
+  body.adult-college-page .acp-docs-right {
+    display: none;
+  }
+
+  body.adult-college-page .acp-id-body {
+    grid-template-columns: 1fr;
+  }
+
+  body.adult-college-page .acp-how-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body.adult-college-page .acp-how-arrow {
+    transform: rotate(90deg);
+    padding-top: 0;
+  }
+
+  body.adult-college-page .acp-final-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  body.adult-college-page .acp-hero-h1 {
+    font-size: 30px;
+  }
+
+  body.adult-college-page .acp-concierge-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

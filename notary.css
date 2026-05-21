@@ -1,0 +1,949 @@
+/* ════════════════════════════════════════════════════════════
+   TFA – notary.css
+   Notary Services page — all section-specific styles.
+   Relies on CSS variables defined in styles.css:
+     --gold, --navy, --card, --border, --font-head, --font-body
+════════════════════════════════════════════════════════════ */
+
+
+/* ══════════════════════════════════════════════
+   NOTARY BUTTON SYSTEM
+══════════════════════════════════════════════ */
+
+.nbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .2s ease;
+  border: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.nbn-gold {
+  background: var(--gold);
+  color: #000;
+  padding: 14px 30px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .2s ease;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nbn-gold:hover {
+  background: #dfc07a;
+  box-shadow: 0 6px 24px rgba(201,164,74,0.45);
+}
+
+.nbn-gold-solid {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 34px;
+  background: var(--gold);
+  color: #000;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .2s ease;
+  text-decoration: none;
+}
+.nbn-gold-solid:hover {
+  background: #dfc07a;
+  box-shadow: 0 6px 28px rgba(201,164,74,0.50);
+}
+
+.nbn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.30);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .2s ease;
+  text-decoration: none;
+}
+.nbn-ghost:hover {
+  border-color: rgba(255,255,255,0.70);
+  background: rgba(255,255,255,0.06);
+}
+
+.notary-gold {
+  color: var(--gold);
+}
+
+
+/* ══════════════════════════════════════════════
+   1. HERO
+══════════════════════════════════════════════ */
+.notary-hero {
+  position: relative;
+  min-height: 640px;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3,5,14,0.97) 0%,
+      rgba(3,5,14,0.92) 28%,
+      rgba(3,5,14,0.70) 50%,
+      rgba(3,5,14,0.30) 75%,
+      rgba(3,5,14,0.10) 100%
+    ),
+    url("assets/images/Notary/header.webp") right center / cover no-repeat;
+  border-bottom: 1px solid rgba(201,164,74,0.18);
+}
+
+.notary-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 70% 50%,
+      rgba(201,164,74,0.08) 0%,
+      transparent 45%
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.notary-hero-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 640px;
+  padding: 80px 64px 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.notary-hero-left {
+  max-width: 580px;
+}
+
+.notary-hero-eyebrow {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  opacity: 0.90;
+}
+
+.notary-hero-h1 {
+  font-family: var(--font-head);
+  font-size: 92px;
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  text-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  color: #fff;
+}
+
+.notary-hero-sub {
+  max-width: 480px;
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(232,233,238,0.80);
+  text-shadow: 0 4px 16px rgba(0,0,0,0.30);
+}
+
+.notary-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* ══════════════════════════════════════════════
+   2. FEATURE STRIP
+══════════════════════════════════════════════ */
+.notary-strip {
+  background: #050610;
+  border-top: 1px solid rgba(201,164,74,0.22);
+  border-bottom: 1px solid rgba(201,164,74,0.22);
+  padding: 0;
+}
+
+.notary-strip-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.notary-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 28px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.72);
+  white-space: nowrap;
+}
+
+.nstrip-icon {
+  font-size: 14px;
+  opacity: 0.80;
+}
+
+.notary-strip-divider {
+  width: 1px;
+  background: rgba(201,164,74,0.18);
+  align-self: stretch;
+  margin: 10px 0;
+}
+
+
+/* ══════════════════════════════════════════════
+   SHARED SECTION TYPOGRAPHY
+══════════════════════════════════════════════ */
+.notary-section-label {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.notary-section-h2 {
+  font-family: var(--font-head);
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 0.95;
+  margin-bottom: 16px;
+}
+
+.notary-section-sub {
+  font-size: 15px;
+  color: rgba(221,224,234,0.68);
+  max-width: 620px;
+  margin-bottom: 40px;
+  line-height: 1.72;
+}
+
+
+/* ══════════════════════════════════════════════
+   3. SERVICE CARDS
+══════════════════════════════════════════════ */
+.notary-services {
+  background: var(--navy);
+  padding: 76px 32px 80px;
+  text-align: center;
+}
+
+.notary-services-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notary-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  align-items: stretch; /* all cards stretch to equal height */
+}
+
+/* Base card */
+.notary-card {
+  background: #09102a;
+  border: 1px solid rgba(201,164,74,0.20);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  transition: transform .25s ease, box-shadow .25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.notary-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+/* Featured card */
+.notary-card--featured {
+  border-color: var(--gold);
+  border-width: 1.5px;
+  background: #0b1230;
+  box-shadow: 0 8px 40px rgba(201,164,74,0.15);
+}
+
+.notary-featured-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: var(--gold);
+  color: #000;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+/* Card image */
+.notary-card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.notary-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.notary-card:hover .notary-card-img img {
+  transform: scale(1.04);
+}
+
+/* Card image overlay gradient */
+.notary-card-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, transparent, rgba(9,16,42,0.85));
+}
+
+/* Card body */
+.notary-card-body {
+  padding: 28px 28px 32px;
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.notary-card-tag {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(221,224,234,0.50);
+  margin-bottom: 8px;
+}
+
+.notary-card-tag--gold {
+  color: var(--gold);
+}
+
+.notary-card-title {
+  font-family: var(--font-head);
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.notary-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.price-amount {
+  font-family: var(--font-head);
+  font-size: 44px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+}
+
+.price-per {
+  font-size: 13px;
+  color: rgba(221,224,234,0.50);
+  font-weight: 400;
+}
+
+.notary-card--featured .price-amount {
+  color: var(--gold);
+}
+
+.notary-card-divider {
+  width: 36px;
+  height: 1.5px;
+  background: rgba(201,164,74,0.30);
+  margin-bottom: 20px;
+}
+
+.notary-card-divider--gold {
+  background: var(--gold);
+  width: 48px;
+}
+
+.notary-card-features {
+  list-style: none;
+  margin-bottom: 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notary-card-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13.5px;
+  color: rgba(221,224,234,0.72);
+  line-height: 1.5;
+}
+
+.ncheck {
+  color: rgba(201,164,74,0.60);
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ncheck--gold {
+  color: var(--gold);
+}
+
+/* Card CTA — pinned to bottom of card body */
+.nbn-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 22px;
+  background: transparent;
+  color: rgba(255,255,255,0.70);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all .2s ease;
+  align-self: flex-start;
+  margin-top: auto; /* pushes button to bottom regardless of content height */
+}
+
+.nbn-card-cta:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.nbn-card-cta--gold {
+  background: var(--gold);
+  color: #000;
+  border-color: var(--gold);
+  font-weight: 800;
+}
+
+.nbn-card-cta--gold:hover {
+  background: #dfc07a;
+  color: #000;
+  box-shadow: 0 4px 20px rgba(201,164,74,0.40);
+}
+
+
+/* ══════════════════════════════════════════════
+   4. CREDENTIALS / ADDITIONAL SERVICES
+══════════════════════════════════════════════ */
+.notary-credentials {
+  background: #06081a;
+  padding: 76px 32px;
+  border-top: 1px solid rgba(201,164,74,0.12);
+  border-bottom: 1px solid rgba(201,164,74,0.12);
+}
+
+.notary-credentials-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 44% 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left: commitment */
+.notary-cred-h2 {
+  font-family: var(--font-head);
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.0;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.notary-cred-sub {
+  font-size: 14px;
+  color: rgba(221,224,234,0.60);
+  line-height: 1.70;
+  margin-bottom: 28px;
+  max-width: 400px;
+}
+
+.notary-commit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notary-commit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,164,74,0.14);
+  border-left: 2px solid var(--gold);
+  border-radius: 2px;
+  transition: background .2s, border-color .2s;
+}
+
+.notary-commit-item:hover {
+  background: rgba(201,164,74,0.04);
+  border-color: rgba(201,164,74,0.28);
+  border-left-color: var(--gold);
+}
+
+.notary-commit-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  opacity: 0.88;
+}
+
+.notary-commit-item h4 {
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.notary-commit-item p {
+  font-size: 13px;
+  color: rgba(221,224,234,0.58);
+  line-height: 1.58;
+}
+
+/* Right: Additional services */
+.notary-addl-block {
+  /* sits right of commitment */
+}
+
+.notary-addl-header {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(201,164,74,0.16);
+}
+
+.notary-addl-h3 {
+  font-family: var(--font-head);
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.notary-addl-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.notary-addl-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(201,164,74,0.12);
+  border-radius: 2px;
+  transition: border-color .2s, background .2s;
+}
+
+.notary-addl-item:hover {
+  border-color: rgba(201,164,74,0.32);
+  background: rgba(201,164,74,0.04);
+}
+
+.notary-addl-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  opacity: 0.82;
+}
+
+.notary-addl-item h4 {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.notary-addl-item p {
+  font-size: 12px;
+  color: rgba(221,224,234,0.52);
+  line-height: 1.58;
+}
+
+
+/* ══════════════════════════════════════════════
+   5. HOW IT WORKS
+══════════════════════════════════════════════ */
+.notary-how {
+  background: var(--navy);
+  padding: 76px 32px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.notary-how-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notary-how-h2 {
+  font-family: var(--font-head);
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.notary-how-sub {
+  font-size: 15px;
+  color: rgba(221,224,234,0.60);
+  max-width: 600px;
+  margin: 0 auto 48px;
+  line-height: 1.72;
+}
+
+.notary-how-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  position: relative;
+}
+
+.notary-how-step {
+  flex: 1;
+  background: #09102a;
+  border: 1px solid rgba(201,164,74,0.18);
+  border-radius: 3px;
+  padding: 36px 28px;
+  text-align: center;
+  position: relative;
+  transition: border-color .25s, transform .25s;
+}
+
+.notary-how-step:hover {
+  border-color: rgba(201,164,74,0.50);
+  transform: translateY(-3px);
+}
+
+.notary-how-num {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--gold);
+  opacity: 0.70;
+  margin-bottom: 14px;
+}
+
+.notary-how-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.notary-how-step h3 {
+  font-family: var(--font-head);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.notary-how-step p {
+  font-size: 13.5px;
+  color: rgba(221,224,234,0.58);
+  line-height: 1.68;
+}
+
+.notary-how-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding-top: 62px;
+  width: 52px;
+  flex-shrink: 0;
+}
+
+.notary-how-line {
+  width: 1px;
+  height: 28px;
+  background: rgba(201,164,74,0.30);
+  display: none;
+}
+
+.notary-how-arrow {
+  font-size: 18px;
+  color: var(--gold);
+  opacity: 0.55;
+  line-height: 1;
+}
+
+
+/* ══════════════════════════════════════════════
+   6b. BOTTOM CTA
+══════════════════════════════════════════════ */
+.notary-bottom-cta {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(201,164,74,0.20);
+}
+
+.notary-bottom-cta-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    url("assets/images/Notary/bottomgavel.webp") center center / cover no-repeat;
+}
+
+.notary-bottom-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(5,7,26,0.96) 0%,
+      rgba(5,7,26,0.90) 40%,
+      rgba(5,7,26,0.80) 70%,
+      rgba(5,7,26,0.70) 100%
+    );
+}
+
+.notary-bottom-cta-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 68px 64px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.notary-bottom-cta-content {
+  text-align: center;
+  max-width: 640px;
+}
+
+.notary-bottom-cta-h2 {
+  font-family: var(--font-head);
+  font-size: 58px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.92;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.notary-bottom-cta-sub {
+  font-size: 14.5px;
+  color: rgba(232,233,238,0.65);
+  line-height: 1.72;
+  margin-bottom: 28px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notary-bottom-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.notary-bottom-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.09);
+}
+
+.notary-bottom-trust span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(221,224,234,0.40);
+}
+
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — Tablet (≤ 1024px)
+══════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+
+  .notary-hero-h1   { font-size: 72px; }
+  .notary-hero-inner { padding: 64px 40px; }
+
+  .notary-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .notary-card--featured {
+    grid-column: auto; /* no spanning — all 4 cards sit in a clean 2×2 */
+    margin-top: 0;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .notary-credentials-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .notary-how-row {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .notary-how-connector { display: none; }
+  .notary-how-step { flex: 1 1 calc(50% - 16px); }
+
+  .notary-bottom-cta-h2 { font-size: 46px; }
+}
+
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — Mobile (≤ 680px)
+══════════════════════════════════════════════ */
+@media (max-width: 680px) {
+
+  .notary-hero-inner { padding: 52px 24px 48px; min-height: 520px; }
+  .notary-hero-h1   { font-size: 54px; }
+  .notary-hero-sub  { font-size: 14px; }
+  .notary-hero-actions { flex-direction: column; align-items: flex-start; gap: 10px; }
+
+  .notary-strip-inner {
+    flex-direction: column;
+    gap: 0;
+  }
+  .notary-strip-divider { width: 100%; height: 1px; margin: 0; }
+  .notary-strip-item { justify-content: center; padding: 14px 16px; }
+
+  .notary-services { padding: 56px 20px 60px; }
+  .notary-section-h2 { font-size: 38px; }
+
+  .notary-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .notary-card--featured {
+    grid-column: auto;
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .notary-credentials { padding: 56px 20px; }
+  .notary-addl-grid { grid-template-columns: 1fr; }
+  .notary-cred-h2 { font-size: 34px; }
+
+  .notary-how { padding: 56px 20px; }
+  .notary-how-h2 { font-size: 38px; }
+  .notary-how-row { flex-direction: column; gap: 12px; }
+  .notary-how-step { flex: none; width: 100%; }
+  .notary-how-connector { display: none; }
+
+  .notary-bottom-cta-inner { padding: 56px 24px; }
+  .notary-bottom-cta-h2   { font-size: 36px; }
+  .notary-bottom-cta-actions { flex-direction: column; gap: 10px; }
+  .notary-bottom-trust {
+    gap: 12px;
+    flex-direction: column;
+  }
+}

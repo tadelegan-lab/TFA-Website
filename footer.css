@@ -1,0 +1,218 @@
+/* ════════════════════════════════════════════════════════════
+   footer.css — Shared Trust-Style Footer
+   Loaded by every page. Identical visual to trusts.html footer.
+   No body-class scope — applies site-wide via .trust-footer.
+════════════════════════════════════════════════════════════ */
+
+/* ── TRUST FOOTER ─────────────────────────────────────────── */
+.trust-footer {
+  background: #05050f;
+  border-top: 1px solid rgba(201,164,74,0.18);
+  padding: 48px 32px 0;
+}
+
+.trust-footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.trust-footer-top {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.trust-footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trust-footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trust-footer-logo {
+  width: 42px;
+  height: auto;
+}
+
+.trust-footer-brand-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.trust-footer-brand-sub {
+  font-size: 7px;
+  letter-spacing: 3px;
+  color: #c9a44a;
+  text-transform: uppercase;
+}
+
+.trust-footer-tagline {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.65;
+}
+
+.trust-footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.trust-footer-social {
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.50);
+  font-size: 13px;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.trust-footer-social:hover {
+  border-color: #c9a44a;
+  color: #c9a44a;
+}
+
+.trust-footer-links {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
+}
+
+.trust-footer-col h4 {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #c9a44a;
+  margin-bottom: 14px;
+}
+
+.trust-footer-col ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trust-footer-col ul li a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.50);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.trust-footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+.trust-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.50);
+}
+
+.trust-footer-contact-item svg {
+  width: 14px;
+  height: 14px;
+  color: #c9a44a;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.trust-footer-worldwide {
+  border-left: 1px solid rgba(255,255,255,0.06);
+  padding-left: 20px;
+}
+
+.trust-footer-worldwide-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(201,164,74,0.08);
+  border: 1px solid rgba(201,164,74,0.20);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a44a;
+  margin-bottom: 10px;
+}
+
+.trust-footer-worldwide h4 {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.trust-footer-worldwide p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.55;
+}
+
+.trust-footer-bottom {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.trust-footer-copy {
+  font-size: 11px;
+  color: rgba(255,255,255,0.30);
+}
+
+.trust-footer-legal {
+  display: flex;
+  gap: 16px;
+}
+
+.trust-footer-legal a {
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.trust-footer-legal a:hover {
+  color: #c9a44a;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .trust-footer-top {
+    grid-template-columns: 1fr;
+  }
+  .trust-footer-links {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .trust-footer-links {
+    grid-template-columns: 1fr;
+  }
+}

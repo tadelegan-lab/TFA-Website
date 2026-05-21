@@ -1,0 +1,1151 @@
+/* ════════════════════════════════════════════════════════════
+   trust.css — Trust Page Styles
+   All rules scoped under body.trust-page
+════════════════════════════════════════════════════════════ */
+
+/* ── PAGE BASE ────────────────────────────────────────────── */
+body.trust-page {
+  background: #f8f7f3;
+  color: #0d1230;
+}
+
+/* ── TRUST NAV CTA ──────────────────────────────────────── */
+body.trust-page .trust-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #c9a44a;
+  color: #080b1c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+body.trust-page .trust-nav-cta:hover {
+  background: #dfc07a;
+}
+
+/* ── HERO ─────────────────────────────────────────────────── */
+body.trust-page .trust-hero {
+  position: relative;
+  background: #080b1c;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+body.trust-page .trust-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+body.trust-page .trust-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.55;
+}
+
+body.trust-page .trust-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(5,7,26,0.96) 0%,
+    rgba(5,7,26,0.88) 38%,
+    rgba(5,7,26,0.45) 65%,
+    rgba(5,7,26,0.18) 100%
+  );
+}
+
+body.trust-page .trust-hero-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 40px 0;
+  display: grid;
+  grid-template-columns: 56% 44%;
+  gap: 10px;
+  align-items: stretch;
+  position: relative;
+  z-index: 2;
+  min-height: 460px;
+}
+
+body.trust-page .trust-hero-left {
+  padding-bottom: 60px;
+  padding-top: 30px;
+  max-width: 720px;
+}
+
+body.trust-page .trust-hero-h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 0.92;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 18px;
+  text-shadow: 0 6px 24px rgba(0,0,0,0.5);
+}
+
+body.trust-page .trust-hero-h1 .gold-line {
+  color: #c9a44a;
+  display: block;
+}
+
+body.trust-page .trust-hero-sub {
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgba(230,232,240,0.82);
+  max-width: 420px;
+  margin-bottom: 28px;
+}
+
+body.trust-page .trust-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+body.trust-page .trust-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #c9a44a;
+  color: #080b1c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 24px;
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+body.trust-page .trust-btn-primary:hover {
+  background: #dfc07a;
+  box-shadow: 0 4px 20px rgba(201,164,74,0.40);
+}
+
+body.trust-page .trust-btn-outline-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255,255,255,0.55);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+body.trust-page .trust-btn-outline-hero:hover {
+  border-color: #c9a44a;
+  color: #c9a44a;
+}
+
+/* Hero right image area */
+body.trust-page .trust-hero-right {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+}
+
+body.trust-page .trust-hero-img-wrap {
+  width: 100%;
+  height: 620px;
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+body.trust-page .trust-hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Shield Badge */
+body.trust-page .trust-shield-badge {
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  background: linear-gradient(160deg, #0d1a40 0%, #05071a 100%);
+  border: 2px solid #c9a44a;
+  border-radius: 4px;
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 160px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  padding-bottom: 28px;
+}
+
+body.trust-page .trust-shield-stars {
+  color: #c9a44a;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+body.trust-page .trust-shield-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+body.trust-page .trust-shield-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.3;
+}
+
+/* Hero icon row */
+body.trust-page .trust-hero-icons {
+  background: rgba(5,7,20,0.88);
+  border-top: 1px solid rgba(201,164,74,0.18);
+  position: relative;
+  z-index: 2;
+}
+
+body.trust-page .trust-hero-icons-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+body.trust-page .trust-hero-icon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  padding: 8px 16px;
+  border-right: 1px solid rgba(201,164,74,0.15);
+}
+
+body.trust-page .trust-hero-icon-item:last-child {
+  border-right: none;
+}
+
+body.trust-page .trust-hicon {
+  width: 36px;
+  height: 36px;
+  background: rgba(201,164,74,0.12);
+  border: 1px solid rgba(201,164,74,0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #c9a44a;
+}
+
+body.trust-page .trust-hicon svg {
+  width: 18px;
+  height: 18px;
+}
+
+body.trust-page .trust-hicon-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+body.trust-page .trust-hicon-text strong {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body.trust-page .trust-hicon-text span {
+  font-size: 10px;
+  color: rgba(255,255,255,0.55);
+}
+
+/* ── WARNING STRIP ────────────────────────────────────────── */
+body.trust-page .trust-warning {
+  background: #f5f2ec;
+  border-top: 3px solid #c9a44a;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 36px 32px;
+}
+
+body.trust-page .trust-warning-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+body.trust-page .trust-warning-left h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0d1230;
+  line-height: 1.0;
+}
+
+body.trust-page .trust-warning-left h2 .not-you {
+  color: #c9a44a;
+  display: block;
+}
+
+body.trust-page .trust-warning-cols {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+}
+
+body.trust-page .trust-warning-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+body.trust-page .trust-warning-col-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(201,164,74,0.10);
+  border: 1px solid rgba(201,164,74,0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a44a;
+  margin-bottom: 4px;
+}
+
+body.trust-page .trust-warning-col h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0d1230;
+  line-height: 1.2;
+}
+
+body.trust-page .trust-warning-col p {
+  font-size: 13px;
+  color: #5a6070;
+  line-height: 1.55;
+}
+
+/* ── TRUST CONTROL SECTION ────────────────────────────────── */
+body.trust-page .trust-control {
+  background: #050b23;
+  min-height: 210px;
+  overflow: hidden;
+}
+
+body.trust-page .trust-control-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 62% 38%;
+  align-items: stretch;
+}
+
+body.trust-page .trust-control-left {
+  padding: 28px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body.trust-page .trust-control-h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: .95;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 24px;
+}
+
+body.trust-page .trust-control-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+}
+
+body.trust-page .trust-control-icon-item {
+  text-align: center;
+  padding: 0 10px;
+  border-right: 1px solid rgba(201,164,74,.25);
+}
+
+body.trust-page .trust-control-icon-item:last-child {
+  border-right: none;
+}
+
+body.trust-page .trust-ctrl-icon {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,164,74,.25);
+  background: rgba(201,164,74,.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a44a;
+}
+
+body.trust-page .trust-ctrl-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+body.trust-page .trust-control-icon-item span {
+  display: block;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body.trust-page .trust-control-img {
+  height: 100%;
+  overflow: hidden;
+}
+
+body.trust-page .trust-control-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ── PRICING SECTION ──────────────────────────────────────── */
+/* ── PRICING SECTION ──────────────────────────────────────── */
+body.trust-page .trust-pricing {
+  background: #f8f7f3;
+  padding: 22px 24px 18px;
+  overflow-x: hidden;
+}
+
+body.trust-page .trust-pricing-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body.trust-page .trust-pricing-heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0d1230;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0 0 22px;
+  white-space: normal;
+}
+
+body.trust-page .trust-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+body.trust-page .trust-plan-card {
+  background: #ffffff;
+  border: 1px solid #0d1230;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+body.trust-page .trust-plan-header {
+  background: #0d1230;
+  padding: 14px 10px 18px;
+  text-align: center;
+  min-height: 88px;
+}
+
+body.trust-page .trust-plan-header--gold {
+  background: #c9a44a;
+}
+
+body.trust-page .trust-plan-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+body.trust-page .trust-plan-header--gold .trust-plan-title {
+  color: #080b1c;
+}
+
+body.trust-page .trust-plan-tagline {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.2;
+}
+
+body.trust-page .trust-plan-header--gold .trust-plan-tagline {
+  color: rgba(5,7,26,0.75);
+}
+
+body.trust-page .trust-plan-body {
+  padding: 16px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+body.trust-page .trust-plan-price {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #0d1230;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 14px;
+  white-space: nowrap;
+}
+
+body.trust-page .trust-plan-price-sub {
+  display: none;
+}
+
+body.trust-page .trust-plan-features {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+}
+
+body.trust-page .trust-plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 12px;
+  color: #2a3050;
+  line-height: 1.25;
+}
+
+body.trust-page .trust-plan-features li::before {
+  content: '✓';
+  color: #c9a44a;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+body.trust-page .trust-plan-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+body.trust-page .trust-plan-btn--gold {
+  background: #c9a44a;
+  color: #080b1c;
+}
+
+body.trust-page .trust-plan-btn--navy {
+  background: #0d1230;
+  color: #ffffff;
+}
+
+body.trust-page .trust-most-popular {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 100%;
+  background: #c9a44a;
+  color: #080b1c;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 10px 14px 4px;
+  text-align: center;
+  z-index: 5;
+}
+
+body.trust-page .trust-plan-card--statefarm {
+  border-color: rgba(13,18,48,.45);
+}
+
+body.trust-page .trust-plan-header--statefarm {
+  background: #f8f7f3;
+}
+
+body.trust-page .trust-pricing-note {
+  text-align: center;
+  font-size: 10px;
+  color: #707490;
+  margin-top: 10px;
+}
+
+/* ── ADD-ON ROW ───────────────────────────────────────────── */
+/* ── ADD-ON ROW ───────────────────────────────────────────── */
+body.trust-page .trust-addons {
+  background: #f8f7f3;
+  padding: 12px 24px 18px;
+  border-top: 1px solid rgba(201,164,74,.35);
+  border-bottom: 1px solid rgba(201,164,74,.25);
+}
+
+body.trust-page .trust-addons-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  gap: 0;
+}
+
+body.trust-page .trust-addon-card {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px 24px;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 18px;
+  align-items: center;
+  border-right: 1px solid rgba(201,164,74,.35);
+}
+
+body.trust-page .trust-addon-card:last-child {
+  border-right: none;
+}
+
+body.trust-page .trust-addon-img-wrap {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.trust-page .trust-addon-img-wrap img {
+  width: 110px;
+  height: 70px;
+  object-fit: contain;
+}
+
+body.trust-page .trust-addon-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0d1230;
+  margin-bottom: 3px;
+}
+
+body.trust-page .trust-addon-desc {
+  font-size: 10px;
+  font-weight: 600;
+  color: #2a3050;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
+body.trust-page .trust-addon-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+body.trust-page .trust-addon-features li {
+  font-size: 10px;
+  color: #2a3050;
+  line-height: 1.2;
+  display: flex;
+  gap: 5px;
+}
+
+body.trust-page .trust-addon-features li::before {
+  content: '✓';
+  color: #c9a44a;
+  font-weight: 900;
+}
+
+body.trust-page .trust-addon-price {
+  font-size: 11px;
+  font-weight: 900;
+  color: #0d1230;
+  margin-bottom: 5px;
+}
+
+body.trust-page .trust-addon-btn {
+  display: inline-block;
+  background: #c9a44a;
+  color: #080b1c;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+/* ── WHAT'S INCLUDED + PROCESS ────────────────────────────── */
+/* ── WHAT'S INCLUDED + PROCESS ────────────────────────────── */
+body.trust-page .trust-included {
+  background: #f8f7f3;
+  padding: 18px 24px 24px;
+  overflow: hidden;
+}
+
+body.trust-page .trust-included-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 190px 1fr 260px;
+  min-height: 220px;
+  background: #ffffff;
+  border: 1px solid rgba(201,164,74,.35);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+body.trust-page .trust-inc-left,
+body.trust-page .trust-inc-right {
+  overflow: hidden;
+}
+
+body.trust-page .trust-inc-left img,
+body.trust-page .trust-inc-right img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+
+body.trust-page .trust-inc-middle {
+  background: #ffffff;
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 28px;
+  align-items: center;
+}
+
+body.trust-page .trust-inc-heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #0d1230;
+  margin: 0 0 12px;
+}
+
+body.trust-page .trust-inc-col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.trust-page .trust-inc-col li {
+  font-size: 11px;
+  line-height: 1.45;
+  color: #2a3050;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 6px;
+}
+
+body.trust-page .trust-inc-col li::before {
+  content: '✓';
+  color: #c9a44a;
+  font-weight: 900;
+}
+
+/* Make the inline process container behave professionally */
+body.trust-page .trust-inc-middle > div[style] {
+  grid-column: auto !important;
+  border-top: none !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+body.trust-page .trust-process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+body.trust-page .trust-step {
+  display: block;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+body.trust-page .trust-step:not(:last-child)::before {
+  content: '→';
+  position: absolute;
+  right: -12px;
+  top: 22px;
+  color: #c9a44a;
+  font-size: 18px;
+  font-weight: 900;
+  background: none;
+  width: auto;
+  height: auto;
+}
+
+body.trust-page .trust-step-num {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #0d1230;
+  color: #0d1230;
+  font-size: 13px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.trust-page .trust-step-content h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .7px;
+  color: #0d1230;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+body.trust-page .trust-step-content p {
+  font-size: 10px;
+  line-height: 1.35;
+  color: #5a6070;
+}
+
+/* ── FINAL CTA BAND ───────────────────────────────────────── */
+body.trust-page .trust-cta-band {
+  background: #05071a;
+  border-top: 1px solid rgba(201,164,74,0.20);
+  padding: 44px 32px;
+}
+
+body.trust-page .trust-cta-band-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 280px;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left: logo + message */
+body.trust-page .trust-cta-left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+body.trust-page .trust-cta-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+body.trust-page .trust-cta-brand-logo {
+  width: 50px;
+  height: auto;
+}
+
+body.trust-page .trust-cta-h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.0;
+  letter-spacing: 1px;
+}
+
+body.trust-page .trust-cta-h2 .cta-gold {
+  color: #c9a44a;
+}
+
+body.trust-page .trust-cta-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.60);
+  line-height: 1.6;
+  max-width: 360px;
+}
+
+/* Center: trust icons */
+body.trust-page .trust-cta-icons {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+body.trust-page .trust-cta-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+body.trust-page .trust-cta-ico {
+  width: 48px;
+  height: 48px;
+  background: rgba(201,164,74,0.10);
+  border: 1px solid rgba(201,164,74,0.28);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a44a;
+}
+
+body.trust-page .trust-cta-ico svg {
+  width: 20px;
+  height: 20px;
+}
+
+body.trust-page .trust-cta-icon-item span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.70);
+  line-height: 1.3;
+}
+
+/* Right: AI concierge card */
+body.trust-page .trust-cta-concierge {
+  background: linear-gradient(160deg, #0d1a40 0%, #05071a 100%);
+  border: 1.5px solid rgba(201,164,74,0.40);
+  border-radius: 4px;
+  overflow: visible;
+}
+
+body.trust-page .trust-cta-concierge-img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  object-position: center center;
+  background: #0d1a40;
+  padding: 12px;
+}
+
+body.trust-page .trust-cta-concierge-body {
+  padding: 18px 20px;
+  text-align: center;
+}
+
+body.trust-page .trust-cta-concierge-eyebrow {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #c9a44a;
+  margin-bottom: 6px;
+}
+
+body.trust-page .trust-cta-concierge-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+  line-height: 1.1;
+}
+
+body.trust-page .trust-cta-concierge-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #c9a44a;
+  color: #080b1c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 11px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+body.trust-page .trust-cta-concierge-btn:hover {
+  background: #dfc07a;
+}
+
+/* ── TRUST FOOTER ─────────────────────────────────────────── */
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  body.trust-page .trust-cards-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  body.trust-page .trust-cta-band-inner {
+    grid-template-columns: 1fr;
+  }
+  body.trust-page .trust-cta-icons {
+    grid-template-columns: repeat(4,1fr);
+  }
+  body.trust-page .trust-cta-concierge {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  body.trust-page .trust-included-inner {
+    grid-template-columns: 1fr;
+  }
+  body.trust-page .trust-inc-left,
+  body.trust-page .trust-inc-right {
+    display: none;
+  }
+  body.trust-page .trust-inc-middle {
+    grid-column: 1/-1;
+  }
+  body.trust-page .trust-control-inner {
+  grid-template-columns: 1fr;
+}
+
+body.trust-page .trust-control-icons {
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+
+body.trust-page .trust-control-left {
+  padding: 28px 20px;
+}
+
+body.trust-page .trust-control-img {
+  height: 240px;
+}
+}
+
+@media (max-width: 900px) {
+  body.trust-page .trust-hero-inner {
+    grid-template-columns: 1fr;
+  }
+  body.trust-page .trust-hero-right {
+    display: none;
+  }
+  body.trust-page .trust-hero-h1 {
+    font-size: 52px;
+  }
+  body.trust-page .trust-warning-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  body.trust-page .trust-warning-cols {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }  body.trust-page .trust-addons-inner {
+    grid-template-columns: 1fr;
+  }
+  body.trust-page .trust-hero-icons-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  body.trust-page .trust-hero-icon-item {
+    border-right: none;
+    flex: 0 0 calc(50% - 8px);
+  }
+}
+
+@media (max-width: 640px) {
+  body.trust-page .trust-hero-h1 {
+    font-size: 40px;
+  }
+  body.trust-page .trust-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  body.trust-page .trust-control-icons {
+    grid-template-columns: repeat(2,1fr);
+  }
+  body.trust-page .trust-control-h2 {
+    font-size: 36px;
+  }
+  body.trust-page .trust-cta-icons {
+    grid-template-columns: repeat(2,1fr);
+  }
+  body.trust-page .trust-pricing {
+    padding: 40px 20px 28px;
+  }
+  body.trust-page .trust-warning {
+    padding: 28px 20px;
+  }
+  body.trust-page .trust-hero-icons-inner {
+    padding: 12px 20px;
+  }  body.trust-page .trust-pricing-heading {
+    font-size: 22px;
+  }
+  body.trust-page .trust-inc-middle {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+  }
+}
