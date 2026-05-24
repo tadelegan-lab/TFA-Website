@@ -9,26 +9,27 @@ body.trust-page {
   color: #0d1230;
 }
 
-/* ── TRUST NAV CTA ──────────────────────────────────────── */
+/* ── TRUST NAV CTA (unified — see styles.css for base) ──── */
 body.trust-page .trust-nav-cta {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   background: #c9a44a;
   color: #080b1c;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 14px 22px;
   border-radius: 2px;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 body.trust-page .trust-nav-cta:hover {
   background: #dfc07a;
+  color: #050510;
 }
 
 /* ── HERO ─────────────────────────────────────────────────── */
@@ -36,7 +37,6 @@ body.trust-page .trust-hero {
   position: relative;
   background: #080b1c;
   overflow: hidden;
-  min-height: 500px;
 }
 
 body.trust-page .trust-hero-bg {
@@ -69,14 +69,10 @@ body.trust-page .trust-hero-bg::after {
 body.trust-page .trust-hero-inner {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 40px 40px 0;
-  display: grid;
-  grid-template-columns: 56% 44%;
-  gap: 10px;
-  align-items: stretch;
+  padding: 70px 40px 60px;
+  display: block;
   position: relative;
   z-index: 2;
-  min-height: 460px;
 }
 
 body.trust-page .trust-hero-left {
@@ -123,7 +119,7 @@ body.trust-page .trust-btn-primary {
   gap: 8px;
   background: #c9a44a;
   color: #080b1c;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -146,7 +142,7 @@ body.trust-page .trust-btn-outline-hero {
   background: transparent;
   color: #ffffff;
   border: 1.5px solid rgba(255,255,255,0.55);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -227,27 +223,27 @@ body.trust-page .trust-shield-sub {
 
 /* Hero icon row */
 body.trust-page .trust-hero-icons {
-  background: rgba(5,7,20,0.88);
+  background: rgba(5,7,20,0.92);
   border-top: 1px solid rgba(201,164,74,0.18);
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  width: 100%;
 }
 
 body.trust-page .trust-hero-icons-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 14px 32px;
-  display: flex;
+  padding: 22px 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  gap: 0;
 }
 
 body.trust-page .trust-hero-icon-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  flex: 1;
-  padding: 8px 16px;
+  gap: 14px;
+  padding: 8px 24px;
   border-right: 1px solid rgba(201,164,74,0.15);
 }
 
@@ -280,7 +276,7 @@ body.trust-page .trust-hicon-text {
 }
 
 body.trust-page .trust-hicon-text strong {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -288,7 +284,7 @@ body.trust-page .trust-hicon-text strong {
 }
 
 body.trust-page .trust-hicon-text span {
-  font-size: 10px;
+  font-size: 12px;
   color: rgba(255,255,255,0.55);
 }
 
@@ -432,7 +428,7 @@ body.trust-page .trust-ctrl-icon svg {
 
 body.trust-page .trust-control-icon-item span {
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 1px;
@@ -521,7 +517,7 @@ body.trust-page .trust-plan-header--gold .trust-plan-title {
 }
 
 body.trust-page .trust-plan-tagline {
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.3px;
   text-transform: uppercase;
@@ -586,7 +582,7 @@ body.trust-page .trust-plan-btn {
   width: 100%;
   text-align: center;
   padding: 10px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 900;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -631,7 +627,7 @@ body.trust-page .trust-plan-header--statefarm {
 
 body.trust-page .trust-pricing-note {
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   color: #707490;
   margin-top: 10px;
 }
@@ -694,7 +690,7 @@ body.trust-page .trust-addon-title {
 }
 
 body.trust-page .trust-addon-desc {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   color: #2a3050;
   line-height: 1.25;
@@ -711,7 +707,7 @@ body.trust-page .trust-addon-features {
 }
 
 body.trust-page .trust-addon-features li {
-  font-size: 10px;
+  font-size: 12px;
   color: #2a3050;
   line-height: 1.2;
   display: flex;
@@ -725,7 +721,7 @@ body.trust-page .trust-addon-features li::before {
 }
 
 body.trust-page .trust-addon-price {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
   color: #0d1230;
   margin-bottom: 5px;
@@ -803,7 +799,7 @@ body.trust-page .trust-inc-col {
 }
 
 body.trust-page .trust-inc-col li {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.45;
   color: #2a3050;
   margin-bottom: 6px;
@@ -868,7 +864,7 @@ body.trust-page .trust-step-num {
 
 body.trust-page .trust-step-content h4 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: .7px;
   color: #0d1230;
@@ -877,7 +873,7 @@ body.trust-page .trust-step-content h4 {
 }
 
 body.trust-page .trust-step-content p {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.35;
   color: #5a6070;
 }
@@ -970,7 +966,7 @@ body.trust-page .trust-cta-ico svg {
 }
 
 body.trust-page .trust-cta-icon-item span {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1001,7 +997,7 @@ body.trust-page .trust-cta-concierge-body {
 }
 
 body.trust-page .trust-cta-concierge-eyebrow {
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -1027,7 +1023,7 @@ body.trust-page .trust-cta-concierge-btn {
   gap: 8px;
   background: #c9a44a;
   color: #080b1c;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;

@@ -131,7 +131,7 @@ body.adult-college-page .acp-hicon-text strong {
 }
 
 body.adult-college-page .acp-hicon-text span {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   color: #aaa;
 }
@@ -157,7 +157,7 @@ body.adult-college-page .acp-badge-lines {
   flex-direction: column;
   gap: 3px;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -363,7 +363,7 @@ body.adult-college-page .acp-pricing-enhanced {
 
 body.adult-college-page .acp-pricing-label {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -374,7 +374,7 @@ body.adult-college-page .acp-pricing-label {
 
 body.adult-college-page .acp-label-sub {
   color: var(--acp-gold);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 body.adult-college-page .acp-price {
@@ -392,7 +392,7 @@ body.adult-college-page .acp-price-gold {
 
 body.adult-college-page .acp-price-sub {
   font-family: 'Barlow', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   color: #aaa;
   margin-bottom: 12px;
 }
@@ -432,7 +432,7 @@ body.adult-college-page .acp-btn-protect {
   background: #fff;
   color: #111;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -531,7 +531,7 @@ body.adult-college-page .acp-id-features {
 
 body.adult-college-page .acp-id-features li {
   font-family: 'Barlow', sans-serif;
-  font-size: 11.5px;
+  font-size: 13px;
   color: #444;
   display: flex;
   align-items: center;
@@ -548,7 +548,7 @@ body.adult-college-page .acp-btn-id-add {
   background: var(--acp-gold);
   color: #000;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -600,7 +600,7 @@ body.adult-college-page .acp-concierge-text strong {
 
 body.adult-college-page .acp-concierge-text span {
   font-family: 'Barlow', sans-serif;
-  font-size: 11.5px;
+  font-size: 13px;
   color: #aaa;
 }
 
@@ -609,7 +609,7 @@ body.adult-college-page .acp-btn-concierge {
   background: var(--acp-gold);
   color: #000;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -676,7 +676,7 @@ body.adult-college-page .acp-how-step-text {
 
 body.adult-college-page .acp-how-step-text strong {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -685,7 +685,7 @@ body.adult-college-page .acp-how-step-text strong {
 
 body.adult-college-page .acp-how-step-text span {
   font-family: 'Barlow', sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   color: #555;
   line-height: 1.35;
 }

@@ -149,7 +149,7 @@
 
 .notary-hero-eyebrow {
   font-family: var(--font-head);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -239,7 +239,7 @@
 ══════════════════════════════════════════════ */
 .notary-section-label {
   font-family: var(--font-head);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -324,7 +324,7 @@
   right: 14px;
   background: var(--gold);
   color: #000;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -373,7 +373,7 @@
 }
 
 .notary-card-tag {
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -471,7 +471,7 @@
   background: transparent;
   color: rgba(255,255,255,0.70);
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
@@ -711,7 +711,7 @@
 
 .notary-how-num {
   font-family: var(--font-head);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 3px;
   color: var(--gold);
@@ -855,7 +855,7 @@
 }
 
 .notary-bottom-trust span {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
