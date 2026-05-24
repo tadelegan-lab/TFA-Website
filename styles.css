@@ -33,8 +33,8 @@ body {
   background: var(--navy);
   color: var(--white);
   font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -52,7 +52,7 @@ img { display: block; max-width: 100%; }
 
 .section-label {
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -65,9 +65,9 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 11px 24px;
+  padding: 14px 28px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
@@ -79,21 +79,26 @@ img { display: block; max-width: 100%; }
 }
 
 .btn-gold {
-  background: #0a0a0a;
-  color: #fff;
-  box-shadow: none;
+  background: #c9a44a;
+  color: #080b1c;
+  font-weight: 800;
 }
 .btn-gold:hover {
-  background: #000;
-  box-shadow: 0 4px 20px rgba(201,164,74,0.42);
+  background: #dfc07a;
+  box-shadow: 0 6px 24px rgba(201,164,74,0.45);
+  transform: translateY(-1px);
 }
 
 .btn-outline {
   background: transparent;
-  color: #0a0a0a;
-  border: 1px solid rgba(0,0,0,4);
+  color: rgba(221,224,234,0.88);
+  border: 1px solid rgba(201,164,74,0.40);
 }
-.btn-outline:hover { border-color: #000; color: #000;}
+.btn-outline:hover {
+  border-color: #c9a44a;
+  color: #ffffff;
+  background: rgba(201,164,74,0.07);
+}
 
 .btn-blue {
   background: var(--blue);
@@ -107,19 +112,79 @@ img { display: block; max-width: 100%; }
   color: var(--blue);
   border: 1px solid var(--blue);
 }
+/* ══════════════════════════════════════════════════════════
+   GLOBAL UNIFIED BUTTON SYSTEM
+   Use .btn-primary for all primary CTAs site-wide.
+   Use .btn-secondary for outline/ghost CTAs on dark backgrounds.
+   Page-specific button classes reference these same values.
+══════════════════════════════════════════════════════════ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #c9a44a;
+  color: #080b1c;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: #dfc07a;
+  box-shadow: 0 6px 24px rgba(201,164,74,0.42);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: rgba(221,224,234,0.88);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 28px;
+  border-radius: 2px;
+  border: 1px solid rgba(201,164,74,0.40);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: #c9a44a;
+  color: #ffffff;
+  background: rgba(201,164,74,0.07);
+}
+
+
 
 /* Size modifiers — replaces former inline font-size/padding overrides */
-.btn-sm  { font-size: 12px; padding: 9px 20px; }
-.btn-xs  { font-size: 12px; padding: 8px 16px; }
+.btn-sm  { font-size: 14px; padding: 11px 22px; }
+.btn-xs  { font-size: 13px; padding: 9px 18px; }
 
 /* ── LEARN MORE LINK ──────────────────────────────────────── */
 .learn-more {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--gold);
   margin-top: 12px;
@@ -149,9 +214,9 @@ nav ul {
   gap: 26px;
 }
 nav ul li a {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   color: rgba(221,224,234,0.70);
   transition: color .2s;
@@ -205,14 +270,14 @@ nav ul li a:hover { color: var(--white); }
 }
 .concierge-badge .info { line-height: 1.2; }
 .concierge-badge .info .label {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--gold);
 }
 .concierge-badge .info .status {
-  font-size: 12px;
+  font-size: 13px;
   color: #4ade80;
   display: flex;
   align-items: center;
@@ -312,7 +377,7 @@ nav ul li a:hover { color: var(--white); }
 .hero-sub {
   max-width: 470px;
   margin-bottom: 26px;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.7;
   color: rgba(232, 233, 238, 0.82);
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
@@ -381,13 +446,13 @@ nav ul li a:hover { color: var(--white); }
   border-radius: 2px;
 }
 .concierge-card-header .hinfo .name {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--white);
   letter-spacing: .5px;
 }
 .concierge-card-header .hinfo .title {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--gold);
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -404,7 +469,7 @@ nav ul li a:hover { color: var(--white); }
   background: var(--navy-4);
   border-radius: 0 6px 6px 6px;
   padding: 9px 13px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.55;
   color: var(--off-white);
   max-width: 90%;
@@ -457,7 +522,7 @@ nav ul li a:hover { color: var(--white); }
 }
 .chat-action-item .text .chat-sub {
   display: block;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted);
 }
 
@@ -476,7 +541,7 @@ nav ul li a:hover { color: var(--white); }
   border: none;
   outline: none;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   flex: 1;
   font-family: var(--font-body);
 }
@@ -491,7 +556,7 @@ nav ul li a:hover { color: var(--white); }
   justify-content: center;
   cursor: pointer;
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -507,9 +572,9 @@ nav ul li a:hover { color: var(--white); }
 
 .section-heading {
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 4.5px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--gold);
   text-align: center;
@@ -584,7 +649,7 @@ nav ul li a:hover { color: var(--white); }
 }
 .service-card h3 {
   font-family: var(--font-head);
-  font-size: 17px;
+  font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -592,9 +657,9 @@ nav ul li a:hover { color: var(--white); }
   margin-bottom: 9px;
 }
 .service-card p {
-  font-size: 13px;
+  font-size: 18px;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .service-card .card-image {
@@ -627,7 +692,7 @@ nav ul li a:hover { color: var(--white); }
   background: var(--navy-4);
   padding: 12px 26px;
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 3.5px;
   text-transform: uppercase;
@@ -681,7 +746,7 @@ nav ul li a:hover { color: var(--white); }
 }
 .protection-card .content h3 {
   font-family: var(--font-head);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -689,9 +754,9 @@ nav ul li a:hover { color: var(--white); }
   margin-bottom: 7px;
 }
 .protection-card .content p {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 /* ── AI CONCIERGE LIVE ────────────────────────────────────── */
@@ -745,7 +810,7 @@ nav ul li a:hover { color: var(--white); }
 
 .ai-demo-content h2 {
   font-family: var(--font-head);
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -753,7 +818,7 @@ nav ul li a:hover { color: var(--white); }
   margin-bottom: 6px;
 }
 .ai-demo-content .sub {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
   margin-bottom: 18px;
   letter-spacing: .3px;
@@ -769,7 +834,7 @@ nav ul li a:hover { color: var(--white); }
   border: 1px solid rgba(255,255,255,0.07);
   border-radius: 2px;
   padding: 7px 13px;
-  font-size: 12px;
+  font-size: 15px;
   color: var(--off-white);
   cursor: pointer;
   transition: border-color .2s, color .2s;
@@ -797,28 +862,28 @@ nav ul li a:hover { color: var(--white); }
 }
 
 .btn-demo {
-  background: var(--blue);
-  color: #fff;
+  background: #c9a44a;
+  color: #080b1c;
   border: none;
-  padding: 13px 26px;
+  padding: 14px 28px;
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   border-radius: 2px;
   cursor: pointer;
-  transition: background .2s, box-shadow .2s;
+  transition: background .2s, box-shadow .2s, transform .15s;
   white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 2px 16px rgba(35,85,245,0.35);
+  box-shadow: 0 2px 16px rgba(201,164,74,0.30);
 }
-.btn-demo:hover { background: var(--blue-dark); box-shadow: 0 4px 24px rgba(35,85,245,0.45); }
+.btn-demo:hover { background: #dfc07a; box-shadow: 0 6px 24px rgba(201,164,74,0.45); transform: translateY(-1px); }
 
 .btn-demo-sub {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -850,7 +915,7 @@ nav ul li a:hover { color: var(--white); }
 
 .testimonial-quote {
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 21px;
   font-style: italic;
   line-height: 1.7;
   color: var(--off-white);
@@ -858,7 +923,7 @@ nav ul li a:hover { color: var(--white); }
 }
 
 .testimonial-attr {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--gold);
@@ -870,7 +935,7 @@ nav ul li a:hover { color: var(--white); }
   letter-spacing: .5px;
   color: var(--muted);
   text-transform: none;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 2px;
 }
 
@@ -908,12 +973,12 @@ nav ul li a:hover { color: var(--white); }
   color: var(--gold);
 }
 .trust-feature .text h4 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--white);
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
-.trust-feature .text p { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.trust-feature .text p { font-size: 15px; color: var(--muted); line-height: 1.6; }
 
 /* ── PARTNER WITH US ──────────────────────────────────────── */
 .partner {
@@ -925,9 +990,9 @@ nav ul li a:hover { color: var(--white); }
 
 .partner-head { text-align: center; margin-bottom: 30px; }
 .partner-head .eyebrow {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 3.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 8px;
@@ -935,14 +1000,14 @@ nav ul li a:hover { color: var(--white); }
 }
 .partner-head h2 {
   font-family: var(--font-head);
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: var(--white);
   margin-bottom: 6px;
 }
-.partner-head p { font-size: 13px; color: var(--muted); }
+.partner-head p { font-size: 16px; color: var(--muted); }
 
 .partner-grid {
   display: grid;
@@ -995,14 +1060,14 @@ nav ul li a:hover { color: var(--white); }
 }
 .partner-card h3 {
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 8px;
 }
-.partner-card p { font-size: 12px; color: var(--muted); line-height: 1.65; }
+.partner-card p { font-size: 15px; color: var(--muted); line-height: 1.7; }
 
 /* ── JOIN TFA NETWORK ─────────────────────────────────────── */
 .join-tfa 
@@ -1030,9 +1095,9 @@ nav ul li a:hover { color: var(--white); }
 }
 .join-tfa h2 {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 3.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: rgba(0,0,0,0.65);
   margin-bottom: 6px;
@@ -1040,7 +1105,7 @@ nav ul li a:hover { color: var(--white); }
 }
 .join-tfa .tagline {
   font-family: var(--font-head);
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1048,7 +1113,7 @@ nav ul li a:hover { color: var(--white); }
   margin-bottom: 10px;
 }
 .join-tfa p {
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(0,0,0,0.75);
   max-width: 480px;
   line-height: 1.7;
@@ -1082,7 +1147,7 @@ footer {
 .footer-logo { margin-bottom: 10px; }
 
 .footer-brand .tagline {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
   line-height: 1.7;
   margin-top: 14px;
@@ -1097,7 +1162,7 @@ footer {
 
 .footer-col h4 {
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -1107,7 +1172,7 @@ footer {
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 8px; }
 .footer-col ul li a {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(112,116,144,0.8);
   transition: color .2s;
 }
@@ -1117,7 +1182,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
   flex-wrap: wrap;
   gap: 10px;
@@ -1214,7 +1279,7 @@ footer {
   background: var(--navy-4);
   padding: 12px 26px;
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 3.5px;
   text-transform: uppercase;
@@ -1325,7 +1390,7 @@ footer {
 
 .protection-card.image-card .content h3 {
   font-family: var(--font-head);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1335,9 +1400,9 @@ footer {
 }
 
 .protection-card.image-card .content p {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--off-white);
-  line-height: 1.55;
+  line-height: 1.6;
   text-align: left;
   margin: 0;
   max-width: 300px;
@@ -1381,7 +1446,7 @@ footer {
 /* Eyebrow label above the title */
 .protection-eyebrow {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 3.5px;
   text-transform: uppercase;
@@ -1400,7 +1465,7 @@ footer {
 /* Slightly wider paragraph for the wider layout */
 .protection-card--combined .content p {
   max-width: 100%;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
   color: rgba(221,224,234,0.88);
 }
@@ -1458,7 +1523,7 @@ footer {
   }
 
   .protection-card.image-card .content p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* Combined card on mobile */
@@ -1485,7 +1550,7 @@ footer {
   }
 
   .protection-card--combined .content p {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 100%;
   }
   
@@ -1562,7 +1627,7 @@ footer {
 }
 
 .service-card p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
   max-width: 360px;
 }
@@ -1651,7 +1716,7 @@ nav ul li a.nav-active {
 
 .trusts-hero-tag {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1675,8 +1740,8 @@ nav ul li a.nav-active {
 
 .trusts-hero-sub {
   max-width: 520px;
-  font-size: 15px;
-  line-height: 1.78;
+  font-size: 18px;
+  line-height: 1.75;
   color: rgba(232, 233, 238, 0.82);
   margin-bottom: 32px;
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
@@ -1698,7 +1763,7 @@ nav ul li a.nav-active {
   color: rgba(221, 224, 234, 0.88);
   border: 1px solid rgba(201, 164, 74, 0.35);
   letter-spacing: 1.8px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 .btn.trusts-btn-outline-hero:hover {
@@ -1769,7 +1834,7 @@ nav ul li a.nav-active {
 
 .trusts-protect-badge-lines span {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -1896,7 +1961,7 @@ nav ul li a.nav-active {
 
 .trusts-reality-block-text h4 {
   font-family: var(--font-head);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1905,15 +1970,15 @@ nav ul li a.nav-active {
 }
 
 .trusts-reality-block-text p {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.7;
   margin: 0;
 }
 
 .trusts-reality-cta-line {
   font-family: var(--font-head);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--off-white);
@@ -1947,7 +2012,7 @@ nav ul li a.nav-active {
 }
 
 .trusts-section-sub {
-  font-size: 15px;
+  font-size: 18px;
   color: var(--muted);
   text-align: center;
   max-width: 600px;
@@ -2007,7 +2072,7 @@ nav ul li a.nav-active {
 
 .trusts-receive-card h3 {
   font-family: var(--font-head);
-  font-size: 17px;
+  font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2016,7 +2081,7 @@ nav ul li a.nav-active {
 }
 
 .trusts-receive-card p {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
   line-height: 1.72;
   margin: 0;
@@ -2029,7 +2094,7 @@ nav ul li a.nav-active {
 
 .trusts-receive-tag {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -2081,7 +2146,7 @@ nav ul li a.nav-active {
   align-items: center;
   gap: 9px;
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
@@ -2151,7 +2216,7 @@ nav ul li a.nav-active {
   background: linear-gradient(135deg, #d4a843 0%, #b8902e 100%);
   color: #000;
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -2161,9 +2226,9 @@ nav ul li a.nav-active {
 
 .trusts-plan-label {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 20px;
@@ -2196,7 +2261,7 @@ nav ul li a.nav-active {
 
 .trusts-plan-period {
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -2214,7 +2279,7 @@ nav ul li a.nav-active {
 }
 
 .trusts-plan-features li {
-  font-size: 13.5px;
+  font-size: 16px;
   color: var(--off-white);
   display: flex;
   align-items: baseline;
@@ -2224,7 +2289,7 @@ nav ul li a.nav-active {
 
 .trusts-check {
   color: var(--gold);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   flex-shrink: 0;
 }
@@ -2240,7 +2305,7 @@ nav ul li a.nav-active {
   background: transparent;
   color: rgba(221, 224, 234, 0.82);
   border: 1px solid rgba(201, 164, 74, 0.32);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
@@ -2287,9 +2352,9 @@ nav ul li a.nav-active {
 }
 
 .trusts-upgrade-sub {
-  font-size: 15px;
+  font-size: 18px;
   color: var(--muted);
-  line-height: 1.78;
+  line-height: 1.75;
   max-width: 520px;
   margin-bottom: 38px;
 }
@@ -2334,7 +2399,7 @@ nav ul li a.nav-active {
 
 .trusts-upgrade-point-text strong {
   font-family: var(--font-head);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -2344,9 +2409,9 @@ nav ul li a.nav-active {
 }
 
 .trusts-upgrade-point-text p {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -2395,7 +2460,7 @@ nav ul li a.nav-active {
     rgba(9, 16, 42, 0.0) 100%
   );
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -2450,9 +2515,9 @@ nav ul li a.nav-active {
 
 .trusts-concierge-eyebrow {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 6px;
@@ -2461,7 +2526,7 @@ nav ul li a.nav-active {
 
 .trusts-concierge-h2 {
   font-family: var(--font-head);
-  font-size: 34px;
+  font-size: 42px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -2470,7 +2535,7 @@ nav ul li a.nav-active {
 }
 
 .trusts-concierge-sub {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
   margin-bottom: 20px;
   max-width: 460px;
@@ -2493,7 +2558,7 @@ nav ul li a.nav-active {
 }
 
 .trusts-concierge-note {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -2576,7 +2641,7 @@ nav ul li a.nav-active {
 
 .trusts-how-step h3 {
   font-family: var(--font-head);
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -2585,7 +2650,7 @@ nav ul li a.nav-active {
 }
 
 .trusts-how-step p {
-  font-size: 13px;
+  font-size: 16px;
   color: var(--muted);
   line-height: 1.72;
   margin: 0;
@@ -2642,7 +2707,7 @@ nav ul li a.nav-active {
 
 .trusts-final-cta-pre {
   font-family: var(--font-serif);
-  font-size: 26px;
+  font-size: 28px;
   font-style: italic;
   color: var(--off-white);
   opacity: 0.72;
@@ -2662,9 +2727,9 @@ nav ul li a.nav-active {
 }
 
 .trusts-final-cta-sub {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--muted);
-  line-height: 1.78;
+  line-height: 1.75;
   margin-bottom: 40px;
 }
 
@@ -2713,7 +2778,7 @@ nav ul li a.nav-active {
 
 .trusts-final-cta-brand-tag {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -2744,7 +2809,7 @@ nav ul li a.nav-active {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 12.5px;
+  font-size: 15px;
   color: var(--off-white);
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -3181,7 +3246,7 @@ footer {
   height: 22px;
   background: #050510;
   color: #c9a44a;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 5px;
   text-align: center;
@@ -3228,7 +3293,7 @@ footer {
 }
 
 .tfa-brand-sub {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 5px;
   color: #c9a44a;
   margin-top: 5px;
@@ -3243,9 +3308,9 @@ footer {
 }
 
 .tfa-menu a {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   color: rgba(255,255,255,0.62);
   transition: color 0.2s ease;
   white-space: nowrap;
@@ -3394,91 +3459,60 @@ body { font-size: 17px; line-height: 1.65; }
   body { font-size: 16px; }
 }
 
-/* Service / partner / card descriptions — 15px floor */
-.service-card p,
-.protection-card .content p,
-.protection-card.image-card .content p,
-.partner-card p,
-.trust-feature .text p,
-.demo-prompt,
-.testimonial-attr span,
-.testimonial-quote {
-  font-size: 15px;
-}
-
-.partner-card h3,
-.protection-card .content h3,
-.protection-card.image-card .content h3,
-.trust-feature .text h4 {
-  font-size: 15px;
-}
-
-/* Section eyebrows / labels — 12px floor */
-.section-heading,
-.protection-label,
-.protection-eyebrow,
-.section-label,
-.partner-head .eyebrow,
-.testimonial-attr,
-.join-tfa h2,
-.btn-demo-sub,
-.ai-demo-content .sub,
-.demo-prompt,
-.concierge-badge .info .label,
-.concierge-badge .info .status,
-.concierge-card-header .hinfo .title,
-.concierge-card-header .hinfo .name {
-  font-size: 12px;
-}
-
-/* Buttons — 13px floor */
-.btn, .btn-sm, .btn-xs, .btn-demo, .learn-more {
-  font-size: 13px;
-}
-
-/* Hero subtitles — 16px floor */
+/* ── TYPOGRAPHY MINIMUMS (updated) ────────────────────── */
+/* Hero subtitles — 18px minimum */
 .hero-sub,
 .trusts-hero-sub,
 .trusts-section-sub,
 .trusts-upgrade-sub {
-  font-size: 16px;
+  font-size: 18px;
 }
 
-/* Reality / receive / upgrade text — 15px floor */
+/* Card descriptions — 16px minimum */
 .trusts-reality-block-text p,
 .trusts-receive-card p,
 .trusts-upgrade-point-text p,
 .trusts-how-step p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
-/* Chat bubbles / input — 13px floor */
+/* Plan features — 16px minimum */
+.trusts-plan-features li {
+  font-size: 16px;
+}
+
+/* Chat UI — 14px minimum (functional UI chrome) */
 .chat-bubble,
 .chat-input-row input,
-.chat-action-item .text,
+.chat-action-item .text {
+  font-size: 14px;
+}
 .chat-action-item .text .chat-sub {
   font-size: 13px;
 }
 
-/* Plan cards — keep pricing prominent, lift small text */
-.trusts-plan-label,
-.trusts-plan-period,
-.trusts-plan-best-value {
-  font-size: 12px;
+/* Concierge card internal labels */
+.concierge-badge .info .label,
+.concierge-card-header .hinfo .title,
+.concierge-card-header .hinfo .name {
+  font-size: 13px;
+}
+.concierge-badge .info .status {
+  font-size: 13px;
 }
 
-.trusts-plan-features li {
-  font-size: 15px;
+/* Buttons — 14px minimum */
+.btn, .btn-sm, .btn-demo {
+  font-size: 14px;
 }
-
-/* Top strip on header */
-.tfa-top-strip { font-size: 12px; }
+.btn-xs { font-size: 13px; }
+.learn-more { font-size: 15px; }
 
 /* Mobile-specific tightening so headers don't break */
 @media (max-width: 1100px) {
-  .hero h1 { font-size: 56px; }
-  .trusts-hero-h1 { font-size: 54px; }
-  .ai-demo-content h2 { font-size: 28px; }
+  .hero h1 { font-size: 60px; }
+  .trusts-hero-h1 { font-size: 58px; }
+  .ai-demo-content h2 { font-size: 34px; }
 }
 
 @media (max-width: 640px) {
@@ -3501,24 +3535,25 @@ body { font-size: 17px; line-height: 1.65; }
   .partner-grid { grid-template-columns: 1fr !important; }
 }
 
-/* Footer bumps (kept gentle — footer.css owns the layout) */
+/* Footer — readable sizes */
 .trust-footer-tagline,
 .trust-footer-contact-item,
 .trust-footer-col ul li a,
 .trust-footer-worldwide p {
+  font-size: 16px;
+}
+
+.trust-footer-col h4,
+.trust-footer-worldwide h4 {
   font-size: 14px;
 }
 
 .trust-footer-copy,
-.trust-footer-legal a,
-.trust-footer-brand-sub,
-.trust-footer-col h4,
-.trust-footer-worldwide h4 {
-  font-size: 12px;
+.trust-footer-legal a {
+  font-size: 13px;
 }
 
-/* Ensure no element accidentally goes below 12px on labels */
-.trust-footer-brand-sub { letter-spacing: 2.5px; }
+.trust-footer-brand-sub { letter-spacing: 2.5px; font-size: 13px; }
 
 /* Prevent horizontal scroll site-wide */
 html, body { overflow-x: hidden; max-width: 100%; }

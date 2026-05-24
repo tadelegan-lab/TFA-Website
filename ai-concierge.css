@@ -51,11 +51,11 @@
   align-items: center;
   gap: 8px;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 13px 26px;
+  padding: 14px 28px;
   border-radius: var(--ai-radius);
   border: 2px solid transparent;
   cursor: pointer;
@@ -72,6 +72,7 @@
 .ai-btn-gold:hover {
   background: var(--ai-gold-light);
   border-color: var(--ai-gold-light);
+  box-shadow: 0 6px 24px rgba(201,164,74,0.42);
   transform: translateY(-1px);
 }
 
@@ -135,7 +136,7 @@
 
 .ai-eyebrow {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   color: var(--ai-gold);
@@ -210,7 +211,7 @@
 
 .ai-feat-label {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.94rem;
   font-weight: 600;
   text-align: center;
   color: var(--ai-off-white);
@@ -295,7 +296,7 @@
 
 .ai-industry-label {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-align: center;
@@ -363,7 +364,7 @@
   border-radius: 50%;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 0.94rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -376,7 +377,7 @@
 
 .ai-step-title {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -387,7 +388,7 @@
 
 .ai-step-desc {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.94rem;
   color: var(--ai-muted);
   line-height: 1.45;
 }
@@ -426,7 +427,7 @@
 
 .ai-demo-box-desc {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.94rem;
   color: var(--ai-off-white);
   line-height: 1.55;
   margin-bottom: 20px;
@@ -452,7 +453,7 @@
 
 .ai-demo-tagline {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.94rem;
   font-style: italic;
   color: var(--ai-muted);
 }
@@ -503,7 +504,7 @@
   background: var(--ai-gold);
   color: #0a0e1a;
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.65rem;
+  font-size: 0.94rem;
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -522,7 +523,7 @@
 
 .ai-card-subtitle {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.94rem;
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -540,7 +541,7 @@
 
 .ai-card-setup {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--ai-muted);
@@ -550,7 +551,7 @@
 
 .ai-card-includes {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.94rem;
   font-weight: 700;
   color: var(--ai-off-white);
   margin-bottom: 10px;
@@ -564,7 +565,7 @@
 }
 .ai-card-features li {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.94rem;
   color: var(--ai-off-white);
   padding: 5px 0;
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -573,7 +574,7 @@
 
 .ai-card-monthly-label {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.65rem;
+  font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   color: var(--ai-muted);
@@ -609,18 +610,18 @@
   flex-wrap: wrap;
 }
 
-.ai-addon-icon { font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
+.ai-addon-icon { font-size: 0.94rem; flex-shrink: 0; margin-top: 1px; }
 
 .ai-addon-name {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.94rem;
   color: var(--ai-off-white);
   flex: 1;
 }
 
 .ai-addon-price {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.94rem;
   font-weight: 700;
   color: var(--ai-gold);
   white-space: nowrap;
@@ -628,7 +629,7 @@
 
 .ai-addons-note {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.94rem;
   color: var(--ai-muted);
   font-style: italic;
   text-align: center;
@@ -665,7 +666,7 @@
 
 .ai-trust-sub {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.94rem;
   color: var(--ai-muted);
   margin: 0 0 44px;
 }
@@ -713,7 +714,7 @@
 
 .ai-trust-name {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -723,7 +724,7 @@
 
 .ai-trust-desc {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.94rem;
   color: var(--ai-muted);
   line-height: 1.5;
 }
@@ -766,7 +767,7 @@
 
 .ai-cta-sub {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.94rem;
   color: var(--ai-off-white);
   line-height: 1.65;
   margin: 0 0 28px;
@@ -791,7 +792,7 @@
 
 .ai-cta-checklist li {
   font-family: 'Barlow', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.94rem;
   color: var(--ai-off-white);
   display: flex;
   align-items: center;
@@ -977,7 +978,7 @@
     gap: 10px;
   }
 
-  .ai-btn { font-size: 0.78rem; padding: 12px 20px; }
+  .ai-btn { font-size: 0.94rem; padding: 12px 20px; }
 
   .ai-industries-grid {
     grid-template-columns: repeat(2, 1fr);

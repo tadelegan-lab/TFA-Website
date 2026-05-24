@@ -107,7 +107,7 @@
 }
 
 .affiliate-hero-sub {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   color: rgba(221, 224, 234, 0.78);
   max-width: 420px;
@@ -129,26 +129,27 @@
   background: var(--gold);
   color: #030510;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 13px 22px;
+  padding: 14px 26px;
   border-radius: 2px;
   cursor: pointer;
-  transition: background 0.2s ease, box-shadow 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
   white-space: nowrap;
   border: none;
 }
 
 .affiliate-btn-gold:hover {
   background: var(--gold-light);
-  box-shadow: 0 4px 20px rgba(201,164,74,0.4);
+  box-shadow: 0 6px 24px rgba(201,164,74,0.42);
   color: #030510;
+  transform: translateY(-1px);
 }
 
 .affiliate-btn-icon {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .affiliate-btn-outline {
@@ -158,11 +159,11 @@
   background: transparent;
   color: #ffffff;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 12px 22px;
+  padding: 13px 26px;
   border-radius: 2px;
   border: 1px solid rgba(201,164,74,0.55);
   cursor: pointer;
@@ -226,7 +227,7 @@
 
 .affiliate-trust-text strong {
   font-family: var(--font-head);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -234,7 +235,7 @@
 }
 
 .affiliate-trust-text span {
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(221,224,234,0.6);
   line-height: 1.4;
 }
@@ -249,7 +250,7 @@
 
 .affiliate-card-title {
   font-family: var(--font-head);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -306,7 +307,7 @@
 
 .affiliate-tier-label {
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -317,7 +318,7 @@
 .affiliate-tier-gold   .affiliate-tier-label { color: var(--gold); }
 
 .affiliate-tier-sublabel {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -334,7 +335,7 @@
 }
 
 .affiliate-tier-list li {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(221,224,234,0.7);
   padding: 2px 0;
   padding-left: 12px;
@@ -346,7 +347,7 @@
   position: absolute;
   left: 0;
   color: var(--gold);
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .affiliate-tier-pct {
@@ -359,7 +360,7 @@
 }
 
 .affiliate-tier-per {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -391,20 +392,20 @@
 }
 
 .affiliate-service-icon {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   color: var(--gold);
 }
 
 .affiliate-service-name {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: rgba(221,224,234,0.9);
 }
 
 .affiliate-service-price {
   font-family: var(--font-head);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   color: #ffffff;
   text-align: right;
@@ -412,7 +413,7 @@
 }
 
 .affiliate-service-earn {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--gold);
   text-align: right;
@@ -438,7 +439,7 @@
 }
 
 .affiliate-why-list li {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(221,224,234,0.85);
   padding-left: 20px;
   position: relative;
@@ -451,7 +452,7 @@
   left: 0;
   color: var(--gold);
   font-weight: 900;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .affiliate-why-seal {
@@ -524,7 +525,7 @@
   align-items: center;
   justify-content: center;
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 900;
   color: var(--gold);
   flex-shrink: 0;
@@ -545,7 +546,7 @@
 
 .affiliate-step-title {
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -554,9 +555,9 @@
 }
 
 .affiliate-step-desc {
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(221,224,234,0.6);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .affiliate-step-arrow {
@@ -590,7 +591,7 @@
 
 .affiliate-payouts-title {
   font-family: var(--font-head);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -599,13 +600,13 @@
 }
 
 .affiliate-payouts-friday {
-  font-size: 13px;
+  font-size: 16px;
   color: #ffffff;
   margin-bottom: 6px;
 }
 
 .affiliate-payouts-sub {
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(221,224,234,0.65);
   margin-bottom: 16px;
   line-height: 1.5;
@@ -676,7 +677,7 @@
 .affiliate-partner-text strong {
   display: block;
   font-family: var(--font-head);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 900;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -685,14 +686,14 @@
 }
 
 .affiliate-partner-text p {
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(221,224,234,0.6);
   line-height: 1.4;
   margin: 0;
 }
 
 .affiliate-more-cta-text {
-  font-size: 13px;
+  font-size: 16px;
   font-style: italic;
   color: var(--gold);
   text-align: center;
@@ -732,7 +733,7 @@
 }
 
 .affiliate-tools-sub {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(221,224,234,0.7);
   margin-bottom: 14px;
   line-height: 1.5;
@@ -748,7 +749,7 @@
 }
 
 .affiliate-tools-list li {
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(221,224,234,0.8);
   line-height: 1.4;
 }
@@ -803,7 +804,7 @@
 }
 
 .affiliate-benefit-label {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: rgba(221,224,234,0.8);
   line-height: 1.3;
@@ -851,7 +852,7 @@
 }
 
 .affiliate-value-label {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   color: rgba(221,224,234,0.8);
   line-height: 1.4;
@@ -878,7 +879,7 @@
 }
 
 .affiliate-final-cta-sub {
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(221,224,234,0.65);
   margin-bottom: 16px;
   line-height: 1.5;
@@ -887,13 +888,13 @@
 .affiliate-final-btn {
   width: 100%;
   justify-content: center;
-  font-size: 10.5px;
-  padding: 13px 16px;
+  font-size: 15px;
+  padding: 14px 18px;
   margin-bottom: 10px;
 }
 
 .affiliate-final-cta-tagline {
-  font-size: 12px;
+  font-size: 15px;
   font-style: italic;
   color: rgba(221,224,234,0.5);
   margin: 0;

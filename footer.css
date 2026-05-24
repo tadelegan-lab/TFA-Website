@@ -43,21 +43,21 @@
 
 .trust-footer-brand-name {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 2px;
 }
 
 .trust-footer-brand-sub {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 2.5px;
   color: #c9a44a;
   text-transform: uppercase;
 }
 
 .trust-footer-tagline {
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255,255,255,0.45);
   line-height: 1.65;
 }
@@ -95,7 +95,7 @@
 }
 
 .trust-footer-col h4 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -112,7 +112,7 @@
 }
 
 .trust-footer-col ul li a {
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255,255,255,0.50);
   text-decoration: none;
   transition: color 0.2s;
@@ -126,7 +126,7 @@
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255,255,255,0.50);
 }
 
@@ -157,7 +157,7 @@
 }
 
 .trust-footer-worldwide h4 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -166,9 +166,9 @@
 }
 
 .trust-footer-worldwide p {
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255,255,255,0.45);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .trust-footer-bottom {
@@ -181,7 +181,7 @@
 }
 
 .trust-footer-copy {
-  font-size: 12px;
+  font-size: 13px;
   color: rgba(255,255,255,0.30);
 }
 
@@ -191,7 +191,7 @@
 }
 
 .trust-footer-legal a {
-  font-size: 12px;
+  font-size: 13px;
   color: rgba(255,255,255,0.35);
   text-decoration: none;
   transition: color 0.2s;
