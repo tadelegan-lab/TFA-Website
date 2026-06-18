@@ -8,7 +8,7 @@
 .trust-footer {
   background: #05050f;
   border-top: 1px solid rgba(201,164,74,0.18);
-  padding: 48px 32px 0;
+  padding: 64px 32px 0;
 }
 
 .trust-footer-inner {
@@ -19,8 +19,8 @@
 .trust-footer-top {
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 48px;
-  padding-bottom: 40px;
+  gap: 56px;
+  padding-bottom: 48px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
@@ -42,7 +42,7 @@
 }
 
 .trust-footer-brand-name {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 24px;
   font-weight: 900;
   color: #ffffff;
@@ -57,9 +57,10 @@
 }
 
 .trust-footer-tagline {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(255,255,255,0.45);
-  line-height: 1.65;
+  line-height: 1.85;
+  letter-spacing: 0.2px;
 }
 
 .trust-footer-socials {
@@ -91,16 +92,16 @@
 .trust-footer-links {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 24px;
+  gap: 32px;
 }
 
 .trust-footer-col h4 {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #c9a44a;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .trust-footer-col ul {
@@ -108,11 +109,12 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 11px;
 }
 
 .trust-footer-col ul li a {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.7;
   color: rgba(255,255,255,0.50);
   text-decoration: none;
   transition: color 0.2s;
@@ -125,8 +127,9 @@
 .trust-footer-contact-item {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  font-size: 16px;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.7;
   color: rgba(255,255,255,0.50);
 }
 
@@ -166,18 +169,18 @@
 }
 
 .trust-footer-worldwide p {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(255,255,255,0.45);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .trust-footer-bottom {
-  padding: 20px 0;
+  padding: 28px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
 }
 
 .trust-footer-copy {

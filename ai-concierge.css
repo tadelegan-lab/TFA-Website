@@ -33,7 +33,7 @@
    SHARED SECTION HEADING
 ════════════════════════════════════════════════ */
 .ai-section-heading {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -50,7 +50,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -135,7 +135,7 @@
 }
 
 .ai-eyebrow {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -145,7 +145,7 @@
 }
 
 .ai-hero-headline {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: clamp(2.4rem, 5vw, 3.5rem);
   font-weight: 900;
   line-height: 1.05;
@@ -156,7 +156,7 @@
 }
 
 .ai-hero-sub {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--ai-off-white);
@@ -174,13 +174,15 @@
 /* Feature icons row */
 .ai-feature-icons {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
   gap: 0;
   margin-top: 32px;
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(201,164,74,0.18);
   border-radius: 10px;
-  padding: 22px 18px;
+  padding: 24px 28px;
+  width: 100%;
+  max-width: 880px;
 }
 
 .ai-feat {
@@ -188,8 +190,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 10px;
-  padding: 0 14px;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0 18px;
   border-right: 1px solid rgba(201,164,74,0.16);
 }
 
@@ -210,14 +213,15 @@
 }
 
 .ai-feat-label {
-  font-family: 'Barlow', sans-serif;
-  font-size: 0.94rem;
-  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
   text-align: center;
   color: var(--ai-off-white);
-  line-height: 1.3;
+  line-height: 1.25;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  max-width: 130px;
 }
 
 /* Hero image right side */
@@ -261,7 +265,7 @@
 }
 
 .ai-industries-heading {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: clamp(0.95rem, 2vw, 1.15rem);
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -295,7 +299,7 @@
 .ai-industry-icon { font-size: 1.6rem; }
 
 .ai-industry-label {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -362,7 +366,7 @@
   background: var(--ai-gold);
   color: #0a0e1a;
   border-radius: 50%;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 900;
   font-size: 0.94rem;
   display: flex;
@@ -376,7 +380,7 @@
 }
 
 .ai-step-title {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.07em;
@@ -387,7 +391,7 @@
 }
 
 .ai-step-desc {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-muted);
   line-height: 1.45;
@@ -416,7 +420,7 @@
 }
 
 .ai-demo-box-label {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: 0.1em;
@@ -426,7 +430,7 @@
 }
 
 .ai-demo-box-desc {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-off-white);
   line-height: 1.55;
@@ -444,7 +448,7 @@
 .ai-demo-phone-icon { font-size: 1.2rem; }
 
 .ai-demo-phone {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.4rem;
   font-weight: 900;
   color: var(--ai-gold);
@@ -452,7 +456,7 @@
 }
 
 .ai-demo-tagline {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   font-style: italic;
   color: var(--ai-muted);
@@ -503,7 +507,7 @@
   right: 18px;
   background: var(--ai-gold);
   color: #0a0e1a;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 900;
   letter-spacing: 0.1em;
@@ -513,7 +517,7 @@
 }
 
 .ai-card-tier {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -522,7 +526,7 @@
 }
 
 .ai-card-subtitle {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   font-weight: 600;
   letter-spacing: 0.09em;
@@ -532,7 +536,7 @@
 }
 
 .ai-card-price {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 2.4rem;
   font-weight: 900;
   color: var(--ai-white);
@@ -540,7 +544,7 @@
 }
 
 .ai-card-setup {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -550,7 +554,7 @@
 }
 
 .ai-card-includes {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
   color: var(--ai-off-white);
@@ -564,7 +568,7 @@
   flex: 1;
 }
 .ai-card-features li {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-off-white);
   padding: 5px 0;
@@ -573,7 +577,7 @@
 }
 
 .ai-card-monthly-label {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -583,7 +587,7 @@
 }
 
 .ai-card-monthly {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.4rem;
   font-weight: 900;
   color: var(--ai-white);
@@ -613,14 +617,14 @@
 .ai-addon-icon { font-size: 0.94rem; flex-shrink: 0; margin-top: 1px; }
 
 .ai-addon-name {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-off-white);
   flex: 1;
 }
 
 .ai-addon-price {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
   color: var(--ai-gold);
@@ -628,7 +632,7 @@
 }
 
 .ai-addons-note {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-muted);
   font-style: italic;
@@ -655,7 +659,7 @@
 }
 
 .ai-trust-heading {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
   font-weight: 900;
   letter-spacing: 0.07em;
@@ -665,7 +669,7 @@
 }
 
 .ai-trust-sub {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-muted);
   margin: 0 0 44px;
@@ -704,7 +708,7 @@
 }
 
 .ai-trust-soc {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.05rem;
   font-weight: 900;
   color: var(--ai-gold);
@@ -713,7 +717,7 @@
 }
 
 .ai-trust-name {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 0.94rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -723,7 +727,7 @@
 }
 
 .ai-trust-desc {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-muted);
   line-height: 1.5;
@@ -757,7 +761,7 @@
 }
 
 .ai-cta-headline {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(1.6rem, 3.5vw, 2.4rem);
   font-weight: 800;
   line-height: 1.2;
@@ -766,7 +770,7 @@
 }
 
 .ai-cta-sub {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-off-white);
   line-height: 1.65;
@@ -791,7 +795,7 @@
 }
 
 .ai-cta-checklist li {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.94rem;
   color: var(--ai-off-white);
   display: flex;

@@ -289,7 +289,7 @@
 .notary-cards-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
   width: 100%;
   align-items: stretch; /* all cards stretch to equal height */
 }
@@ -325,11 +325,11 @@
   right: 14px;
   background: var(--gold);
   color: #000;
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 5px 11px;
   border-radius: 2px;
   z-index: 3;
 }
@@ -366,7 +366,7 @@
 
 /* Card body */
 .notary-card-body {
-  padding: 28px 28px 32px;
+  padding: 30px 30px 34px;
   text-align: left;
   flex: 1;
   display: flex;
@@ -374,12 +374,15 @@
 }
 
 .notary-card-tag {
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(221,224,234,0.50);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  min-height: 34px;          /* keeps titles aligned across cards */
+  display: flex;
+  align-items: flex-end;
 }
 
 .notary-card-tag--gold {
