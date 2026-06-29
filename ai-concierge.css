@@ -174,26 +174,30 @@
 /* Feature icons row */
 .ai-feature-icons {
   display: grid;
-  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 0;
   margin-top: 32px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(201,164,74,0.18);
-  border-radius: 10px;
-  padding: 24px 28px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(201, 164, 74, 0.22);
+  border-radius: 12px;
+  padding: 24px 0;
   width: 100%;
-  max-width: 880px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .ai-feat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   justify-content: flex-start;
+  text-align: center;
   gap: 12px;
   padding: 0 18px;
-  border-right: 1px solid rgba(201,164,74,0.16);
+  border-right: 1px solid rgba(201, 164, 74, 0.18);
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .ai-feat:last-child {
@@ -210,18 +214,20 @@
   background: rgba(201, 164, 74, 0.1);
   border: 1px solid var(--ai-border);
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .ai-feat-label {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.15vw, 1.1rem);
   font-weight: 800;
   text-align: center;
   color: var(--ai-off-white);
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  max-width: 130px;
+  max-width: 145px;
+  overflow-wrap: normal;
 }
 
 /* Hero image right side */
@@ -882,27 +888,29 @@
     border-radius: 8px;
   }
 
+  /* Responsive fix */
   .ai-feature-icons {
-  grid-template-columns: 1fr;
-  padding: 0;
-}
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 
-.ai-feat {
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: left;
-  border-right: none;
-  border-bottom: 1px solid rgba(201,164,74,0.16);
-  padding: 16px 18px;
-}
+  .ai-feat {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    border-right: none;
+    border-bottom: 1px solid rgba(201, 164, 74, 0.18);
+    padding: 16px 18px;
+  }
 
-.ai-feat:last-child {
-  border-bottom: none;
-}
+  .ai-feat:last-child {
+    border-bottom: none;
+  }
 
-.ai-feat-label {
-  text-align: left;
-}
+  .ai-feat-label {
+    text-align: left;
+    max-width: none;
+  }
 
   .ai-industries-grid {
     gap: 10px 14px;
